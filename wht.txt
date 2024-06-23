@@ -1,5 +1,7 @@
 zad.3
 https://pl.w3hmong.com/xml/schema_dtypes_misc.htm
+http://www.datypic.com/sc/xsd/t-xsd_language.html
+https://www.oreilly.com/library/view/xml-schema/0596002521/re96.html
 
 boolean – typ danych służący do reprezentowania logiczno-matematycznej wartości boole’owskiej należącej do zbioru dwuelementowego {prawda, fałsz}. Dopuszczalnymi wartościami są literały: 1, 0, true, false.
 
