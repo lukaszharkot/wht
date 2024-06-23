@@ -1,0 +1,88 @@
+zad.3
+https://pl.w3hmong.com/xml/schema_dtypes_misc.htm
+
+boolean – typ danych służący do reprezentowania logiczno-matematycznej wartości boole’owskiej należącej do zbioru dwuelementowego {prawda, fałsz}. Dopuszczalnymi wartościami są literały: 1, 0, true, false.
+
+nonPositiveInteger – typ służący do reprezentacji liczb całkowitych, które są mniejsze lub równe zero. Jest to podtyp typu danych integer. Przykładowymi wartościami są: -1, 0, -243
+
+duration – typ służący do reprezentacji okresu trwania czegoś w czasie. Wartość duration jest sześcioczłonowa: lata, miesiące, dni, godziny, minuty, sekundy. Poprawna wartość musi przyjąć formę: "PnYnMnDTnHnMnS", gdzie "P" oznacza okres, "nY" oznacza liczbę lat, "nM" oznacza liczbę miesięcy, "nD" oznacza liczbę dni, "T" oznacza separator czasu, "nH" oznacza liczbę godzin, "nM" oznacza liczbę minut, a "nS" oznacza liczbę sekund. Minimalna poprawna wartość musi obejmować co najmniej jeden z członów. Przykłady wartości: "P1Y" - okres jednego roku; "P3M" - okres trzech miesięcy; “PT1M30S" – jedna minuta i trzydzieści sekund; "P2Y4M6DT8H30M" - okres dwóch lat, czterech miesięcy, sześciu dni, ośmiu godzin i trzydziestu minut
+
+
+zad.4
+
+@prefix ex: <http://example.pl#/> .
+
+ex:QuoVadis
+    ex:tytuł "Quo vadis" ;
+    ex:Adaptacja [
+        ex:Film ;
+        ex:kraj "Francja" ;
+        ex:rok 1901 ;
+        ex:reżyser [
+            ex:imię "Lucien Nonguet"
+        ], [
+            ex:imię "Ferdinand Zecca"
+        ] ;
+        ex:typ "Film niemy"
+    ], [
+        ex:Serial ;
+        ex:kraj "Włochy" ;
+        ex:rok 1985 ;
+        ex:reżyser [
+            ex:imię "Franco Rossi"
+        ] ;
+        ex:typ "Serial telewizyjny"
+    ] .
+
+#2 przyklad
+
+@prefix ex: <http://example.pl#> .
+
+ex:Maria_Curie
+    ex:nagrodaNobla [ 
+        ex:dziedzinaNobla “fizyka” ; 
+        ex:rokNobla 1903 ; 
+        ex:odkrycieNobla “promieniotwórczość” . 
+    ] , [ 
+        ex:dziedzinaNobla “chemia” ;
+        ex:rokNobla 1911 ;
+        ex: odkrycieNobla “polon”, “rad” . 
+        ] .
+
+
+
+zad.5
+
+@prefix ex: <http://example.pl#/> .
+
+ex:KolekcjaFilmów
+    ex:Film [
+        ex:tytuł "Harry Potter i Kamień Filozoficzny" ;
+        ex:reżyser [
+            ex:imię "Chris"
+            ex:nazwisko "Columbus"
+        ] ;
+        ex:rokWydania 2001
+    ], [
+        ex:tytuł "Avatar" ;
+        ex:reżyser [
+            ex:imię "James"
+            ex:nazwisko "Cameron"
+        ] ;
+        ex:rokWydania 2009
+    ], [
+        ex:tytuł "John Wick" ;
+        ex:reżyser [
+            ex:imię "Chad"
+            ex:nazwisko "Stahelski"
+        ] ;
+        ex:rokWydania 2014
+    ], [
+        ex:tytuł "James Bond: Skyfall" ;
+        ex:reżyser [
+            ex:imię "Sam"
+            ex:nazwisko: "Mendes"
+        ] ;
+        ex:rokWydania 2012
+    ] .
+
